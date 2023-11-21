@@ -10,3 +10,10 @@
     ```sh 
    ansible webserver[-1] --list-host   #Last Node will call
    ```
+3. Using Command module to Run Linux Commands to Nodes
+    ```sh 
+   ansible all -m command -a "hostname"
+   ```
+    ```sh 
+   
+   ```

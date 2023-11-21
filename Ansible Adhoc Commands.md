@@ -47,5 +47,5 @@
    ```
 11. Starting Service in any package using ad-hoc
    ```sh 
-   ansible all -m service -a "pkg=httpd state=stated" -b
+   ansible all -m service -a "pkg=httpd state=started" -b
    ```

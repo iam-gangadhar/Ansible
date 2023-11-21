@@ -35,10 +35,10 @@
    ```
 8. Installing Package using Yum module in Ansible
     ```sh 
-   ansible all -m yum -a "pkg=httpd state=present"
+   ansible all -m yum -a "pkg=httpd state=present" -b
    ```
 9. Removing package using yum module in ansible
  ```sh 
-   ansible all -m yum -a "pkg=httpd state=absent"
+   ansible all -m yum -a "pkg=httpd state=absent" -b
    ```
 

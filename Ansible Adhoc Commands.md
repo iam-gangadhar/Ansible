@@ -21,7 +21,13 @@
     ```sh 
    ansible all -a "touch myfile"   # creating myfile to all nodes
    ```
-
-
+5. Checking Nodes are Reachable or Not
+    ```sh 
+   ansible all -m ping   # Fetching the information from nodes.
+   ```
+6. Installing Package using Ad-hoc command
+    ```sh 
+   ansible all -a "sudo yum install tree -y"
+   ```
 
 

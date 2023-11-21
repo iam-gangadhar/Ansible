@@ -18,10 +18,9 @@
    ansible all -a "ls"  # to see all files in current admin directory
    ```
 4. Create a file /directory
-      ```sh
+ 
 
 
-   ```
 
 
 

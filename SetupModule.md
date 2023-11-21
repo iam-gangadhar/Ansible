@@ -5,7 +5,7 @@
    ```
 2. To filter required data in setup module using filter
     ```sh 
-   ansible all -m setup -a 'fitler=ipv4'
+   ansible all -m setup -a 'filter=ipv4'
    ```
 3. to know the machine name of the nodes using filter
     ```sh 

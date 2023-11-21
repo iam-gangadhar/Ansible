@@ -41,4 +41,11 @@
  ```sh 
    ansible all -m yum -a "pkg=httpd state=absent" -b
    ```
-
+10. Updating package using state as latest
+   ```sh 
+   ansible all -m yum -a "pkg=httpd state=latest" -b
+   ```
+11. Starting Service in any package using ad-hoc
+   ```sh 
+   ansible all -m service -a "pkg=httpd state=stated" -b
+   ```

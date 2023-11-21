@@ -29,5 +29,8 @@
     ```sh 
    ansible all -a "sudo yum install tree -y"
    ```
-
+7. Copying file from server to nodes using Ad-hoc command
+    ```sh 
+   ansible all -m copy -a "src=myfile dest=/home/admin"
+   ```
 

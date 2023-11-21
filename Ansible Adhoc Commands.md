@@ -33,4 +33,12 @@
     ```sh 
    ansible all -m copy -a "src=myfile dest=/home/admin"
    ```
+8. Installing Package using Yum module in Ansible
+    ```sh 
+   ansible all -m yum -a "pkg=httpd state=present"
+   ```
+9. Removing package using yum module in ansible
+ ```sh 
+   ansible all -m yum -a "pkg=httpd state=absent"
+   ```
 

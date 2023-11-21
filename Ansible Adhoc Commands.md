@@ -10,10 +10,18 @@
     ```sh 
    ansible webserver[-1] --list-host   #Last Node will call
    ```
-3. Using Command module to Run Linux Commands to Nodes
+3. Using Command module to Run Linux Commands to the Nodes
     ```sh 
    ansible all -m command -a "hostname"
    ```
     ```sh 
-   
+   ansible all -a "ls"  # to see all files in current admin directory
    ```
+4. Create a file /directory
+      ```sh
+
+
+   ```
+
+
+

@@ -1,0 +1,10 @@
+---
+- name: Playbook for Installing Multiple Package
+  hosts: all
+  become: true
+  tasks:
+
+  - name: Installing Multiple Packages
+    yum:
+     name: ['git','tree','httpd','wget','which','docker*','gcc','make','telnet']
+     state: installed

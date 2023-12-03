@@ -8,12 +8,13 @@
       name: httpd
       state: installed
     when: ansible_os_family == "RedHat"
-  
+
   - name: Start Httpd Service
     service:
-      name: httpd
+      name: htt--
       state: started
     when: ansible_os_family == "RedHat"
+    ignore_errors: yes
 
   - name: Install Apache2 Package
     apt:
@@ -24,5 +25,3 @@
   - name: Starting Apache2 Service
     service:
       name: apache2
-      state: started
-    when: ansible_os_family == "Debian"

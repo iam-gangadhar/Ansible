@@ -1,5 +1,8 @@
 #### On RHEL 8.x server
 
+#### Installation Type - 1
+
+
 1. Install Python latest version  (on Control node and Managed host)
    ```sh 
    yum install python3 -y
@@ -61,4 +64,20 @@
 1. Run ansible command as ansadmin user it should be successful (Master)
    ```sh 
    ansible all -m ping
-   ```
+    ```
+
+#### Installation Type - 2 (Trying)
+1. Update the system and install ansilble server.
+```sh
+sudo yum install -y ansible
+```
+2. Install The Python
+
+3. add host file
+```sh
+sudo nano /etc/ansible/hosts
+```
+
+
+
+

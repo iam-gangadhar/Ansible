@@ -1,0 +1,13 @@
+---
+- name: My Playbook for Copying a file
+  hosts: all
+  become: true
+  tasks:
+  - name: copy  a file
+    copy:
+      src: myfiles.html
+      dest: /home/admin
+      mode: 0600
+      owner: gangadhar
+      
+...

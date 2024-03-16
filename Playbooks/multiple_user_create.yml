@@ -1,0 +1,16 @@
+---
+- name: Playbook for Creating Usres
+  hosts: all
+  become: true
+  tasks:
+
+  - name: creating Multiple Users
+    user: name='{{item}}' state=present
+    with_items:
+      - raj
+      - hair
+      - kumari
+      - siddhu
+      - keerthi
+      - ganga
+    

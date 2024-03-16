@@ -1,0 +1,10 @@
+---
+- name: My Playbook for Creating file
+  hosts: all
+  become: true
+  tasks:
+  - name: creating a file
+    file:
+      path: /home/admin/plybook
+      state: touch
+...
